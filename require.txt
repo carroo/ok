@@ -1,0 +1,31 @@
+			-- Require --
+
+1. install laravel
+   (composer create-project laravel/laravel example-app)
+
+2. install laravel ui [untuk membuat auth dan ui]
+   (composer require laravel/ui)
+
+3. install livewire
+   (composer require livewire/livewire)
+   
+4. install auth
+   (php artisan ui vue --auth)
+   (npm install && npm run dev)
+   (npm run development)
+
+5. membuat migrasi database (ORM)
+   (php artisan make:migration create_produk_table)
+
+6. hit migrasi database
+   (php artisan migrate)
+
+7. (php artisan make:livewire Livewire)
+
+8. create view produk
+
+9. proteksi halaman di routes
+
+   Route::middleware('auth')->group(function () {
+    Route::view('produk[link]', 'produk[view]');
+   });
